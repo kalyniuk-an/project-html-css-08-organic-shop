@@ -1,0 +1,118 @@
+
+.benefits.section{
+    background-color: #1A5901;
+    color: #FFFFFF;
+}
+.benefits.container{
+    display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+}
+
+.benefits-content-wrapper{
+margin-bottom: 32px;
+
+}
+@media only screen and (min-width: 1440px) {
+  .benefits-content-wrapper {
+    width: 644px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .benefits-main-wrapper {
+    padding: 25px 0;
+    padding-left: 24px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  
+}
+@media only screen and (max-width:1440px) {
+  .benefits-image {
+  width: 100%;
+  height: 487px;  
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  }
+} 
+
+.benefits-title {
+    font-family: "Chivo", sans-serif;
+font-weight: 400;
+font-size: 36px;
+line-height: 1.2;
+letter-spacing: -0.01em;
+margin-bottom: 24px;
+}
+@media only screen and (min-width: 1440px) {
+  .benefits-title {
+    font-size: 48px;
+  }
+}
+.benefits-description {
+    font-size: 18px;
+}
+.benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 8px 0;
+}
+@media only screen and (min-width: 768px) {
+  .benefits-list {
+    flex-direction: row;
+    gap: 32px 16px;
+    flex-wrap: wrap;
+    
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .benefits-list {
+    width: 644px;
+  }
+}
+.benefits-item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .benefits-item {
+    flex-basis: calc((100% - 16px) /2);
+    
+  }
+}
+.benefits-icon {
+    fill:#FFFFFF;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .benefits-item:last-child .benefits-icon {
+    width: 48px;
+    height: 48px;
+}
+.benefits-item:nth-child(2) .benefits-icon {
+    width: 24px;
+    height: 24px;
+  }
+} 
+@media only screen and (min-width: 1439.8px) {
+  .benefits-item:nth-child(3) .benefits-icon {
+    width: 48px;
+    height: 48px;
+  }
+}
+.benefits-subtitle {
+    font-family: "Chivo", sans-serif;
+font-weight: 400;
+font-size: 20px;
+line-height: 1.4;
+letter-spacing: -0.01em;
+}
+.benefits-text {
+}
