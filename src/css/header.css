@@ -71,11 +71,11 @@
   }
 }
 
+
 @media only screen and (min-width: 1440px) {
   .wrapper-btn {
     gap: 0;
   }
-
 }
 
 .order-btn:hover,
