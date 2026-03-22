@@ -74,6 +74,7 @@ margin-bottom: 24px;
 @media only screen and (min-width: 1440px) {
   .benefits-list {
     width: 644px;
+    gap: 24px;
   }
 }
 .benefits-item {
@@ -87,11 +88,18 @@ margin-bottom: 24px;
     
   }
 }
+
+@media only screen and (min-width: 1440px) {
+  .benefits-item {
+    flex-basis: calc((100% - 24px) /2);
+  }
+}
 .benefits-icon {
     fill:#FFFFFF;
 }
 
-@media only screen and (max-width: 767.98px) {
+/* #region Previous Icon Settings */
+/* @media only screen and (max-width: 767.98px) {
   .benefits-item:last-child .benefits-icon {
     width: 48px;
     height: 48px;
@@ -106,7 +114,9 @@ margin-bottom: 24px;
     width: 48px;
     height: 48px;
   }
-}
+} */
+/* #endregion Icon Settings */
+
 .benefits-subtitle {
     font-family: "Chivo", sans-serif;
 font-weight: 400;
