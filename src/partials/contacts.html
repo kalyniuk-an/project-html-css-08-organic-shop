@@ -1,5 +1,76 @@
 <section class="contacts section">
   <div class="container">
-    contacts
+    <div class="contacts-tumb">
+      <div class="contents-tumb_wrapper">
+        <h2 class="title">Contacts</h2>
+
+        <h3 class="subtitle">Get in Touch</h3>
+
+        <p class="text">We'd love to hear from you anytime!</p>
+
+        <address class="contacts-address">
+          <ul class="contacts-list">
+            <li class="contacts-list_item">
+              <svg class="contacts-list_icon" width="24" height="24">
+                <use href="../img/sprite.svg#icon-mail"></use>
+              </svg>
+              <a class="contacts-list_link" href="mailto:hello@organicstore.com"
+                >hello@organicstore.com</a
+              >
+            </li>
+            <li class="contacts-list_item">
+              <svg class="contacts-list_icon" width="24" height="24">
+                <use href="../img/sprite.svg#icon-phone"></use>
+              </svg>
+              <a class="contacts-list_link" href="tel:+15553291024"
+                >+1 (555) 329-1024</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <form class="contacts-form">
+          <label class="contacts-form_label" for="user-name">Name</label>
+          <input
+            class="contacts-form_input"
+            id="user-name"
+            name="user-name"
+            type="text"
+            placeholder="Sarah"
+          />
+
+          <label class="contacts-form_label" for="user-email">Email</label>
+          <input
+            class="contacts-form_input"
+            id="user-email"
+            name="user-email"
+            type="email"
+            placeholder="hello@organic.com"
+          />
+
+          <label class="contacts-form_label" for="user-message">Message</label>
+          <textarea
+            class="contacts-form_textarea"
+            name="user-message"
+            id="user-message"
+            placeholder="Type your message..."
+          ></textarea>
+
+          <button class="contacts-form_btn" type="button">Submit</button>
+        </form>
+      </div>
+
+      <div class="contacts-img-tumb">
+        <img
+          class="contacts_img"
+          srcset="
+            ../img/contacts/contacts@1x.jpg,
+            ../img/contacts/contacts@2x.jpg
+          "
+          src="../img/contacts/contacts@1x.jpg"
+          alt="friends"
+        />
+      </div>
+    </div>
   </div>
 </section>
