@@ -37,12 +37,6 @@
     flex-wrap: wrap;
     gap: 32px 24px;
     margin: 0 auto;
-    /* border: 1px solid red; */
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .mission-container {
   }
 }
 
@@ -87,7 +81,6 @@
 
 @media only screen and (min-width: 768px) {
   .mission-text {
-    /* border: 1px solid #000; */
     width: 340px;
     margin: 0;
   }
