@@ -58,3 +58,24 @@ margin-bottom: 16px;
   margin-top: 16px;
   margin-bottom: 0;
 }
+
+.faq-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1440px) {
+  .faq-wrapper {
+    flex-direction: row;
+    gap: 24px;
+    align-items: flex-start;
+  }
+
+  .faq-left {
+    width: 421px;
+  }
+
+  .faq-right {
+    width: 867px;
+  }
+}
