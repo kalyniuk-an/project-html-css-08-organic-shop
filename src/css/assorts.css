@@ -10,8 +10,8 @@
   /* justify-content: flex-start; */
 
   /* padding: 64px 16px; */
-  width: 100%;
-  max-width: 375px;
+  /* width: 100%; */
+  /* max-width: 375px; */
   /* height: 4479px; */
 
   outline: 1px solid red;
@@ -34,18 +34,47 @@ assorts-title {
   line-height: 1.2;
   letter-spacing: -0.01em;
   color: #010400;
-}
 
+  width: 344px;
+}
+@media screen and (min-width: 1440px) {
+  .assorts-title-header {
+    font-size: 48px;
+
+    width: 768px;
+  }
+}
 .assorts-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  /* width: 100%; */
+}
+@media screen and (min-width: 768px) {
+  .assorts-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .assorts-list {
+    gap: 24px;
+  }
 }
 .assorts-list-item {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+@media screen and (min-width: 768px) {
+  .assorts-list-item {
+    width: calc((100% - 16px) / 2);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .assorts-list-item {
+    width: calc((100% - 3 * 24px) / 4);
+    /* height: 527px; */
+  }
 }
 .assorts-item-image {
   width: 100%;
@@ -59,7 +88,11 @@ assorts-title {
   display: flex;
   gap: 16px;
 }
-
+@media screen and (min-width: 1440px) {
+  .assorts-item-desc {
+    height: 63px;
+  }
+}
 .assorts-item-name {
   font-weight: 600;
   font-size: 18px;
