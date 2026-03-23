@@ -1,0 +1,117 @@
+.assorts {
+  background-color: #d1ddcc;
+}
+
+.assorts-block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  /* align-items: flex-start; */
+  /* justify-content: flex-start; */
+
+  /* padding: 64px 16px; */
+  width: 100%;
+  max-width: 375px;
+  /* height: 4479px; */
+
+  outline: 1px solid red;
+}
+
+assorts-title {
+  display: flex;
+}
+.assorts-title-subheader {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  color: #010400;
+}
+.assorts-title-header {
+  font-family: 'Chivo', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #010400;
+}
+
+.assorts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  /* width: 100%; */
+}
+.assorts-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.assorts-item-image {
+  width: 100%;
+}
+.assorts-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.assorts-item-info {
+  display: flex;
+  gap: 16px;
+}
+
+.assorts-item-name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #010400;
+}
+.assorts-item-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #010400;
+}
+.assorts-item-price {
+  text-align: right;
+}
+.assorts-item-value {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #010400;
+}
+.assorts-item-price p {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.3;
+  text-align: right;
+  color: #010400;
+}
+.assorts-item-btn {
+  border: 1px solid rgba(1, 4, 0, 0.15);
+  border-radius: 6px;
+  padding: 4px 10px;
+  max-width: 343px;
+  height: 40px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #010400;
+
+  background-color: transparent;
+}
+.assorts-item-btn:hover,
+.assorts-item-btn:focus {
+  color: #ffffff;
+  background-color: #1a5901;
+  /* cursor: pointer; */
+}
+.assorts-item-btn:active {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.12);
+}
+.assorts-item-btn:disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
