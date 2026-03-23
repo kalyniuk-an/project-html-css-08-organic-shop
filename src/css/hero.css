@@ -6,7 +6,7 @@
   justify-content: center;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('./img/hero/hero-bg_mob@1x.jpg');
+    url('../img/hero/hero-bg_mob@1x.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -25,7 +25,7 @@
   .hero {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url('./img/hero/hero-bg_mob@2x.jpg');
+      url('../img/hero/hero-bg_mob@2x.jpg');
   }
 }
 
@@ -92,9 +92,31 @@
 
 @media only screen and (min-width: 768px) {
   .hero {
-    padding: 326px 0;
+    padding: 234px 0;
+  }
+  .hero-title {
+    max-width: 611px;
+  }
+  .hero-description {
+    max-width: 611px;
+  }
+  .hero-btn {
+    width: 254px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
+  .hero {
+    padding: 326px 0;
+  }
+
+  .hero-title {
+    max-width: 646px;
+  }
+  .hero-description {
+    max-width: 646px;
+  }
+  .hero-btn {
+    width: 199px;
+  }
 }
