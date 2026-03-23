@@ -21,7 +21,7 @@
       referrerpolicy="no-referrer"
     />
     <script type="module" crossorigin src="/project-html-css-08-organic-shop/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-html-css-08-organic-shop/assets/index-BVzWGE2v.css">
+    <link rel="stylesheet" crossorigin href="/project-html-css-08-organic-shop/assets/index-BestQTJC.css">
   </head>
   <body>
     <header class="header">
@@ -627,7 +627,7 @@
     </div>
   </div>
 </section>
-      <section class="contacts section">
+      <section class="contacts section" id="contacts-id">
   <div class="container">
     <div class="contacts-tumb">
       <div class="contents-tumb_wrapper">
@@ -661,27 +661,32 @@
         <form class="contacts-form">
           <label class="contacts-form_label" for="user-name">Name</label>
           <input
-            class="contacts-form_input"
+            class="contacts-form_input inp-valid-name"
             id="user-name"
             name="user-name"
             type="text"
+            pattern="^[a-zA-Z\s\.]{5,64}$"
             placeholder="Sarah"
           />
 
           <label class="contacts-form_label" for="user-email">Email</label>
           <input
-            class="contacts-form_input"
+            class="contacts-form_input inp-valid-email"
             id="user-email"
             name="user-email"
             type="email"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
             placeholder="hello@organic.com"
           />
 
-          <label class="contacts-form_label" for="user-message">Message</label>
+          <label class="contacts-form_message" for="user-message"
+            >Message</label
+          >
           <textarea
-            class="contacts-form_textarea"
+            class="contacts-form_textarea inp-valid"
             name="user-message"
             id="user-message"
+            maxlength="500"
             placeholder="Type your message..."
           ></textarea>
 
@@ -689,14 +694,20 @@
         </form>
       </div>
 
-      <div class="contacts-img-tumb">
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="/project-html-css-08-organic-shop/assets/contacts-d@1x-DGrAZanD.jpg, /project-html-css-08-organic-shop/assets/contacts-d@2x-bG1MWMyf.jpg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/project-html-css-08-organic-shop/assets/contacts-t@1x-C7QXn4Wy.jpg, /project-html-css-08-organic-shop/assets/contacts-t@2x-DtWNCC9K.jpg"
+        />
         <img
-          class="contacts_img"
-          srcset="../img/contacts/contacts@1x.jpg, ../img/contacts/contacts@2x.jpg"
-          src="../img/contacts/contacts@1x.jpg"
+          srcset="/project-html-css-08-organic-shop/assets/contacts-m@1x-1ydDyxtL.jpg, /project-html-css-08-organic-shop/assets/contacts-m@2x-DngK-4_g.jpg"
           alt="friends"
         />
-      </div>
+      </picture>
     </div>
   </div>
 </section>
