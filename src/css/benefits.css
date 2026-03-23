@@ -3,14 +3,14 @@
     background-color: #1A5901;
     color: #FFFFFF;
 }
-.benefits.container{
+.benefits-wrapper.container{
     display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 
 }
 @media only screen and (min-width: 1440px) {
-  .benefits.container {
+  .benefits-wrapper.container {
     gap: 24px;
   }
 }
