@@ -8,14 +8,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 24px;
   width: 100%;
 }
 
 
 .footer-logo {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
@@ -30,7 +29,6 @@
   font-weight: 400;
   text-align: center;
   list-style: none;
-  padding: 0 128px;
   margin: 0;
   text-align: center;
   display: flex;
@@ -83,7 +81,7 @@
 
 .footer-socials svg {
   fill: #ffffff;
-  transition: fill 200ms ease;
+  transition: fill 250ms ease;
   width: 32px;
   height: 32px;
 
@@ -99,7 +97,6 @@
 }
 
 .footer-bottom {
-  /* width: 100%; */
   text-align: center;
   margin-top: 40px;
 }
@@ -119,34 +116,99 @@
 
 
 @media screen and (min-width: 768px) {
+  
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.footer-leaf {
+  flex-shrink: 0;
+}
+
+.footer-top {
+  gap: 24px;
+}
 
   .footer-desc {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 24px 40px;
+    gap: 24px 32px;
+    padding: 0 40px;
+  }
+
+  .footer-list a {
+    font-size: 16px;
+  }
+
+  .footer-socials svg {
+    width: 24px;
+    height: 24px;
+
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .footer-line {
+    margin-bottom: 0;
+  }
+
+  .footer-copyright {
+    padding-bottom: 0;
+  }
+
+  .footer {
+    padding-bottom: 80px;
   }
 
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
+
+  .footer {
+    padding: 84px 0 80px;
+  }
 
   .footer-top {
+    display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    margin-bottom: 80px;
   }
 
   .footer-logo {
-    margin-bottom: 0;
+  display: flex;
+  justify-content: left;
+  margin: auto;
   }
 
+  .footer-leaf {
+    width: 84px;
+    height: 36px;
+    flex-shrink: 0;
+  }
+
+
   .footer-desc {
-    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    margin: auto;
+    
   }
 
   .footer-socials {
-    margin: 0;
+    margin-left: auto;
+    padding: 0;
+    gap: 32px;
   }
 
 }
