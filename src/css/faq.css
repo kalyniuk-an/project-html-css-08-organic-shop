@@ -1,6 +1,6 @@
 .faq {
   background-color: #5e8a4d;
-  padding: 64px 0; 
+  padding: 64px 0;
 }
 
 .faq-title {
@@ -12,19 +12,23 @@
   color: #fff;
   margin-bottom: 8px;
 }
+
 .faq-discription {
-font-family: "Public Sans", sans-serif;
-font-weight: 400;
-font-size: 18px;
-line-height: 1.5;
-color: #fff;
-margin-bottom: 16px;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 16px;
 }
+
 .faq-list {
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 24px;
 }
+
 .faq-item {
-  padding: 24px 0; 
+  padding: 24px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -32,7 +36,7 @@ margin-bottom: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 56px;
+  margin-bottom: 16px;
 }
 
 .faq-question {
@@ -46,7 +50,7 @@ margin-bottom: 16px;
 
 .faq-svg {
   fill: #fff;
-  flex-shrink: 0; 
+  flex-shrink: 0;
 }
 
 .faq-answer {
@@ -55,8 +59,7 @@ margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.5;
   color: #fff;
-  margin-top: 16px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .faq-wrapper {
