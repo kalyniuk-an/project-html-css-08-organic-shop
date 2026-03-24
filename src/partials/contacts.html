@@ -12,7 +12,7 @@
           <ul class="contacts-list">
             <li class="contacts-list_item">
               <svg class="contacts-list_icon" width="24" height="24">
-                <use href="../img/sprite.svg#icon-mail"></use>
+                <use href="./img/sprite.svg#icon-mail"></use>
               </svg>
               <a class="contacts-list_link" href="mailto:hello@organicstore.com"
                 >hello@organicstore.com</a
@@ -20,7 +20,7 @@
             </li>
             <li class="contacts-list_item">
               <svg class="contacts-list_icon" width="24" height="24">
-                <use href="../img/sprite.svg#icon-phone"></use>
+                <use href="./img/sprite.svg#icon-phone"></use>
               </svg>
               <a class="contacts-list_link" href="tel:+15553291024"
                 >+1 (555) 329-1024</a
@@ -30,36 +30,48 @@
         </address>
 
         <form class="contacts-form">
-          <label class="contacts-form_label" for="user-name">Name</label>
-          <input
-            class="contacts-form_input inp-valid-name"
-            id="user-name"
-            name="user-name"
-            type="text"
-            pattern="^[a-zA-Z\s\.]{5,64}$"
-            placeholder="Sarah"
-          />
+          <div class="valid-box">
+            <label class="contacts-form_label" for="user-name">Name</label>
+            <input
+              class="contacts-form_input inp-valid-name"
+              id="user-name"
+              name="user-name"
+              type="text"
+              pattern="^[a-zA-Z\s\.]{5,64}$"
+              placeholder="Sarah"
+            />
+            <p class="text-valid">Succes!</p>
+            <p class="text-invalid">Invalid name, try again</p>
+          </div>
 
-          <label class="contacts-form_label" for="user-email">Email</label>
-          <input
-            class="contacts-form_input inp-valid-email"
-            id="user-email"
-            name="user-email"
-            type="email"
-            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-            placeholder="hello@organic.com"
-          />
+          <div class="valid-box">
+            <label class="contacts-form_label" for="user-email">Email</label>
+            <input
+              class="contacts-form_input inp-valid-email"
+              id="user-email"
+              name="user-email"
+              type="email"
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              placeholder="hello@organic.com"
+            />
+            <p class="text-valid">Succes!</p>
+            <p class="text-invalid">Invalid email, try again</p>
+          </div>
 
-          <label class="contacts-form_message" for="user-message"
-            >Message</label
-          >
-          <textarea
-            class="contacts-form_textarea inp-valid"
-            name="user-message"
-            id="user-message"
-            maxlength="500"
-            placeholder="Type your message..."
-          ></textarea>
+          <div class="valid-box">
+            <label class="contacts-form_message" for="user-message"
+              >Message</label
+            >
+            <textarea
+              class="contacts-form_textarea inp-valid-message"
+              name="user-message"
+              id="user-message"
+              maxlength="500"
+              placeholder="Type your message..."
+            ></textarea>
+            <p class="text-valid">Succes!</p>
+            <p class="text-invalid">Please leave a message</p>
+          </div>
 
           <button class="contacts-form_btn" type="button">Submit</button>
         </form>
