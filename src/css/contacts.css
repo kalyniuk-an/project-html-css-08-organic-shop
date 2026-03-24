@@ -120,22 +120,6 @@
   color: red;
 }
 
-.inp-valid-message:placeholder-shown {
-  border-color: red;
-}
-
-.inp-valid-message:placeholder-shown ~ .text-invalid {
-  display: block;
-}
-
-.inp-valid-message:placeholder-shown::placeholder {
-  color: red;
-}
-
-.inp-valid-message:not(:placeholder-shown) {
-  border-color: green;
-}
-
 .inp-valid-message:not(:placeholder-shown) ~ .text-valid {
   display: block;
 }
