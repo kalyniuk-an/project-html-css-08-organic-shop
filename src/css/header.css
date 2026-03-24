@@ -193,7 +193,6 @@ body:has(.nav-modal-overlay.is-open) {
 }
 
 .modal-header .logo {
-  ;
   margin-right: auto;
 }
 
