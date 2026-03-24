@@ -43,24 +43,39 @@
   text-decoration: none;
   font-size: 16px;
   line-height: 1.5;
+  transition: color 250ms ease;
 
 }
+
+.footer-list a:hover,
+.footer-list a:focus {
+  color: #41d1ff;
+}
+
+.footer-list a:focus,
+.footer-socials a:focus {
+  outline: 1px solid #41d1ff;
+  outline-offset: 2px;
+}
+
+
 
 .footer-link {
   position: relative;
   display: inline-block;
-  list-style: none;
-  padding: 0;
-  flex-direction: column;
-  gap: 20px;
-  text-align: center;
+
+}
+
+.footer-link:hover .footer-leaf,
+.footer-link:focus .footer-leaf {
+  fill: #41d1ff;
 }
 
 .footer-link::before {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;
   transform: translateX(-50%) skewX(-12deg);
   z-index: -1;
   width: 100%;
@@ -76,6 +91,10 @@
   gap: 24px;
   justify-content: center;
   align-items: center;
+}
+
+.footer-socials a:focus svg {
+  fill: #41d1ff;
 }
 
 .footer-socials svg {
@@ -175,7 +194,7 @@
   }
 
   .footer-top {
-    display: raw;
+    display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
@@ -185,7 +204,8 @@
 
   .footer-logo {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  margin: 0;
   
   }
 
@@ -199,17 +219,18 @@
   .footer-desc {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     padding: 0;
     margin-left: 260px;
+    justify-content: flex-start;
+    gap: 32px;
     
   }
 
   .footer-socials {
+    padding: 0;
+    gap: 20px;
+    padding: 0;
     margin-left: auto;
-    padding: 0;
-    gap: 32px;
-    padding: 0;
   }
 
   .footer-socials svg {
@@ -218,10 +239,11 @@
   }
 
   .footer-bottom {
-    margin-top: 80px;
+    
     display: flex;
     flex-direction: column;
     gap: 32px;
+    margin-top: 0;
   }
 
   .footer-line {
