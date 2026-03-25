@@ -53,6 +53,7 @@
               type="email"
               pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
               placeholder="hello@organic.com"
+              required
             />
             <p class="text-valid">Succes!</p>
             <p class="text-invalid">Invalid email, try again</p>
@@ -68,10 +69,11 @@
               id="user-message"
               maxlength="500"
               placeholder="Type your message..."
+              required
             ></textarea>
           </div>
 
-          <button class="contacts-form_btn" type="button">Submit</button>
+          <button class="contacts-form_btn" type="submit">Submit</button>
         </form>
       </div>
 
