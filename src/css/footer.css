@@ -1,5 +1,5 @@
 .footer {
-  padding: 80px 0 40px;
+  padding: 80px 0;
   background-color: #0A2300;
   color: #FFFFFF;
 }
@@ -8,8 +8,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
   width: 100%;
+  gap: 24px;
 }
 
 
@@ -29,13 +29,17 @@
 .footer-desc {
   font-family: 'Public Sans', sans-serif;
   font-weight: 400;
-  text-align: center;
+  
   list-style: none;
   margin: 0;
+
+  padding: 0;
+
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 32px;
 
 }
@@ -47,30 +51,14 @@
   line-height: 1.5;
 
   transition: color 250ms ease, background-color 250ms ease;
-    padding: 4px 8px;
-    border-radius: 4px;
-
 
 }
-/*  change */
+
 .footer-list a:hover,
 .footer-list a:focus {
-  /*  change */
-  background-color: #010400;
-  background-color: #010400;
-  outline: none;
-}
-
-.footer-list a:focus,
-.footer-socials a:focus {
-  outline: 1px solid rgba(255, 255, 255, 0.5);
-  outline-offset: 4px;
-  /* outline: 1px solid #010400;
-  outline-offset: 2px; */
+  color: #010400;
   
 }
-
-
 
 .footer-link {
   position: relative;
@@ -81,9 +69,9 @@
 .footer-link:hover .footer-leaf,
 .footer-link:focus .footer-leaf {
   fill: #010400;
-  
+
   outline: none;
-  
+
 }
 
 .footer-link::before {
@@ -98,16 +86,57 @@
   background-color: #010400;
   transition: 250ms ease;
 
+
+}
+
+
+.footer-nav-link {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: color 250ms ease, background-color 250ms ease;
+  position: relative;
+  display: inline-block;
+  line-height: 1.5;
+ 
+}
+
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  color: #010400;
   
 }
 
+.footer-nav-link:focus-visible {
+  outline: 2px solid #FFFFFF;
+  outline-offset: 4px;
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  color: #010400;
+  background-color: #FFFFFF;
+}
+
+
 .footer-socials {
   list-style: none;
-  margin: 0;
   display: flex;
-  gap: 24px;
+  gap: 11px;
   justify-content: center;
   align-items: center;
+}
+
+.footer-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
 }
 
 .footer-socials a:focus svg {
@@ -122,18 +151,22 @@
   transition: fill 250ms ease;
   width: 32px;
   height: 32px;
-
-  transition: fill 250ms ease;
+  display: block;
 
 }
 
-.footer-socials a:hover svg
+.footer-socials a:hover svg,
 .footer-socials a:focus svg {
   fill: #010400;
 
   transition: background-color 0.3s ease;
   outline: none;
-  
+
+}
+
+.footer-socials a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
 }
 
 .footer::after {
@@ -142,14 +175,14 @@
 
 .footer-bottom {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 46px;
 }
 
 .footer-line {
   width: 100%;
   height: 1px;
   background-color: rgba(255, 255, 255, 0.2);
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 
 .footer-copyright {
@@ -160,20 +193,20 @@
 
 
 @media screen and (min-width: 768px) {
-  
-.footer-logo {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-}
 
-.footer-leaf {
-  flex-shrink: 0;
-}
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
 
-.footer-top {
-  gap: 24px;
-}
+  .footer-leaf {
+    flex-shrink: 0;
+  }
+
+  .footer-top {
+    gap: 24px;
+  }
 
   .footer-desc {
     display: flex;
@@ -181,11 +214,14 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 24px 32px;
-    padding: 0 40px;
   }
 
   .footer-list a {
     font-size: 16px;
+  }
+
+  .footer-socials {
+    gap: 0;
   }
 
   .footer-socials svg {
@@ -199,6 +235,7 @@
     flex-direction: column;
     gap: 32px;
   }
+
   .footer-line {
     margin-bottom: 0;
   }
@@ -216,7 +253,7 @@
 @media screen and (min-width: 1440px) {
 
   .footer {
-    padding: 84px 0 80px;
+    padding-bottom: 80px;
   }
 
   .footer-top {
@@ -228,11 +265,13 @@
     gap: 0;
   }
 
+
   .footer-logo {
-  display: flex;
-  justify-content: flex-start;
-  margin: 0;
-  
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    margin-right: 260px;
+
   }
 
   .footer-leaf {
@@ -246,17 +285,17 @@
     display: flex;
     flex-direction: row;
     padding: 0;
-    margin-left: 260px;
     justify-content: flex-start;
     gap: 32px;
-    
+
   }
 
   .footer-socials {
     padding: 0;
-    gap: 20px;
+    /* gap: 20px; */
     padding: 0;
     margin-left: auto;
+    gap: 0;
   }
 
   .footer-socials svg {
@@ -265,16 +304,19 @@
   }
 
   .footer-bottom {
-    
+
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    /* gap: 32px; */
     margin-top: 0;
   }
 
   .footer-line {
     margin-bottom: 0;
-    
+
+
   }
+
+  
 
 }
