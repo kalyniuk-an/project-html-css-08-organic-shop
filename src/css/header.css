@@ -125,12 +125,23 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  background-color: rgba(1, 4, 0, 0.3);
+  background-color: #5e8a4d;
 
   opacity: 0;
   pointer-events: none;
   transition: opacity 250ms ease-in-out;
   visibility: hidden;
+}
+@media only screen and (min-width: 768px) {
+  .nav-modal-overlay {
+    justify-content: flex-end;
+    background-color: rgba(1, 4, 0, 0.3);
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .nav-modal-overlay {
+    display: none;
+  }
 }
 
 .nav-modal-overlay.is-open {
@@ -139,28 +150,10 @@
   visibility: visible;
 }
 
-@media only screen and (min-width: 1440px) {
-  .nav-modal-overlay {
-    display: none;
-  }
-}
-
 body:has(.nav-modal-overlay.is-open) {
   overflow-y: hidden;
 }
 
-.modal-container {
-  padding: 0;
-  height: 100%;
-}
-
-@media only screen and (min-width: 768px) {
-  .modal-container {
-    display: flex;
-    justify-content: flex-end;
-    width: 768px;
-  }
-}
 
 .nav-modal {
   display: flex;
@@ -169,7 +162,6 @@ body:has(.nav-modal-overlay.is-open) {
   justify-content: flex-start;
   padding: 0px 16px;
   max-width: 375px;
-  height: 100%;
   color:#fff;
   background-color: #5e8a4d;
   overflow-y: auto;
