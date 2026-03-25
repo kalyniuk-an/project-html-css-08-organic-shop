@@ -1,6 +1,7 @@
 .contacts {
   background-color: #e8eee5;
   color: #010400;
+}
 
   .title {
     font-weight: 600;
@@ -23,7 +24,6 @@
     line-height: 1.5;
     margin-bottom: 32px;
   }
-}
 
 .contacts-address {
   margin-bottom: 32px;
