@@ -30,9 +30,29 @@ margin-bottom: 32px;
   }
 }
 
-@media only screen and (min-width: 1440px) {
-  
+.benefits-image {
+  width: 343px;
+  height: 487px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 24px;
 }
+
+@media only screen and (min-width:768px) {
+  .benefits-image {
+    width: 704px;
+  }
+}
+
+@media only screen and (min-width:1440px) {
+  .benefits-image {
+    width: 644px;
+    height: 670px;
+    margin-bottom: 0;
+  }
+}
+/*
 @media only screen and (max-width:1440px) {
   .benefits-image {
   width: 100%;
@@ -42,7 +62,7 @@ margin-bottom: 32px;
   margin: 0 auto;
   margin-bottom: 24px;
   }
-} 
+} */
 
 .benefits-title {
     font-family: "Chivo", sans-serif;
